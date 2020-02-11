@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(OSX 10.15, *)
-struct CCProgressIndicator: NSViewRepresentable {
+public struct CCProgressIndicator: NSViewRepresentable {
     @Binding var shouldAnimate:Bool
     func makeNSView(context: Context) -> NSProgressIndicator {
         let x=NSProgressIndicator()

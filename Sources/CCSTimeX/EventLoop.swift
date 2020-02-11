@@ -7,3 +7,7 @@
 
 import Foundation
 
+public struct Loop {
+    public var text = "Event Loop"
+    public init(){}
+}

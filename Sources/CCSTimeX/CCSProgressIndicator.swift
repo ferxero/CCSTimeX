@@ -10,12 +10,12 @@ import SwiftUI
 @available(OSX 10.15, *)
 public struct CCProgressIndicator: NSViewRepresentable {
     @Binding var shouldAnimate:Bool
-    func makeNSView(context: Context) -> NSProgressIndicator {
+    public func makeNSView(context: Context) -> NSProgressIndicator {
         let nsp=NSProgressIndicator()
         nsp.style = .spinning
         return nsp
     }
-    func updateNSView(_ nsView: NSProgressIndicator, context: Context) {
+    public func updateNSView(_ nsView: NSProgressIndicator, context: Context) {
         if self.shouldAnimate {
             nsView.startAnimation(self)
         }else{

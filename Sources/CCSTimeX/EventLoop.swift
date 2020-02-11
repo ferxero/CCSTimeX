@@ -11,3 +11,20 @@ public struct Loop {
     public var text = "Event Loop"
     public init(){}
 }
+
+public class Timer {
+    var timeout:Double, start:Date
+    
+    public init(timeout:Double) {
+        self.timeout=timeout
+        self.start=Date()
+    }
+    
+    public func done() -> Bool {
+        return abs(self.start.timeIntervalSinceNow)>self.timeout
+    }
+    
+}
+
+
+

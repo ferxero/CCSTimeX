@@ -1,3 +1,3 @@
-struct CCSTimeX {
+public struct CCSTimeX {
     var text = "Hello, World!"
 }

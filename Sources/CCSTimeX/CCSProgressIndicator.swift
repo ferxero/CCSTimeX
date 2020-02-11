@@ -9,7 +9,7 @@ import SwiftUI
 
 @available(OSX 10.15, *)
 public struct CCProgressIndicator: NSViewRepresentable {
-    @Binding var shouldAnimate:Bool
+    public @Binding var shouldAnimate:Bool
     public func makeNSView(context: Context) -> NSProgressIndicator {
         let nsp=NSProgressIndicator()
         nsp.style = .spinning

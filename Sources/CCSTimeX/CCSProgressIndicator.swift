@@ -9,6 +9,7 @@ import SwiftUI
 
 @available(OSX 10.15, *)
 public struct CCProgressIndicator: NSViewRepresentable {
+    public init() {}
     public @Binding var shouldAnimate:Bool
     public func makeNSView(context: Context) -> NSProgressIndicator {
         let nsp=NSProgressIndicator()
